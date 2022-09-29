@@ -1,0 +1,46 @@
+.App-sidebar {
+  display: flex;
+  background-color: #051d40;
+  color: white;
+  height: 100%;
+  width: 13%;
+  flex-direction: column;
+}
+
+.App-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 10%;
+}
+
+.App-img {
+  height: 3.5vh;
+  padding-right: 2vh;
+  padding-left: 2vh;
+}
+
+.App-title {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.App-navbar {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  height: 90%;
+}
+
+.dropdown-container {
+  font-size: smaller;
+  text-indent: 5px;
+  display: none;
+  background-color: #041734;
+}
+
+.logout .nav-item:hover {
+  background-color: transparent;
+}

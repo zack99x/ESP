@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+.profil {
+  background-color: #e8edf0;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.profil img {
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid black;
+  overflow: hidden;
+}
+
+.form-profil {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-profil-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-profil-input input {
+  width: 100%;
+  border-radius: 2px;
+  border-width: 1px;
+}
+
+.form-profil-button {
+  display: flex;
+  justify-content: center;
+}
+
+.wrong-password-alert.inactive {
+  display: none;
+}
+
+.wrong-password-alert.active {
+  display: block;
+  color: red;
+  font-size: 0.7rem;
+  background-color: transparent;
+  margin: 0;
+}
+
+.error,
+.error:focus-visible {
+  border-color: red;
+  outline: 2px solid red;
+}

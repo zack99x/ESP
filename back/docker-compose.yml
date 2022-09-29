@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+    db:
+        image: postgres
+        environment:
+            - POSTGRES_DB=iam
+            - POSTGRES_USER=iamuser
+            - POSTGRES_PASSWORD=password
+    web:
+        build: .
+        command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+        ports:
+            - "8000:8000"
+        environment:
+            - POSTGRES_DB=iam
+            - POSTGRES_USER=iamuser
+            - POSTGRES_PASSWORD=password
+            - POSTGRES_HOST=db
+            - DATABASE_NAME=iam
+            - DATABASE_USER=iamuser
+            - DATABASE_PASSWORD=password
+            - DATABASE_HOST=db
+        depends_on:
+            - db

@@ -1,0 +1,17 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding-left: 2vh;
+  text-decoration: none;
+  color: white;
+  height: 8vh;
+}
+
+.nav-item:hover {
+  background-color: #264a80;
+}
+
+/* active Class Name est une classe par défault qui appartient à NavLink et permet de paramétrer le background color onClick avec du CSS seulement */
+.active {
+  background-color: #264a80;
+}

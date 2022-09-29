@@ -1,0 +1,51 @@
+GET http://localhost:8000/api/user
+
+
+###
+
+POST http://0.0.0.0:8000/signup/
+Content-Type: application/json
+
+{
+    "email": "alexandru.burla@epitech.eu",
+    "password": "deeaerm123",
+    "first_name": "alex",
+    "last_name": "brla"
+}
+
+
+###
+POST http://0.0.0.0:8000/login/
+Content-Type: application/json
+
+{
+    "email": "alexandru.burla@epitech.eu",
+    "password": "deeaerm123"
+}
+
+
+###
+POST http://localhost:8000/password/reset/
+Authorization: '5645d0e334df99e02476cebc7966aaf39eb48f20'
+Content-Type: application/json
+
+{
+    "email": "alexandru.burla@epitech.eu"
+}
+
+###
+POST http://localhost:8000/password/reset/verified/
+Authorization: '5645d0e334df99e02476cebc7966aaf39eb48f20'
+Content-Type: application/json
+
+{
+    "code": "2d0694980daa5c46408fe993aa5ea4478cd090c4",
+    "password": "deeaerm123"
+}
+
+
+
+###
+GET http://localhost:8000/users/me
+Authorization: 03183efc386c8aa7e0a6b769c114155a0898f384
+

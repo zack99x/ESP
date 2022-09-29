@@ -1,0 +1,11 @@
+.approbations-demandes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 3vh;
+}
+
+.approbations-demandes-title {
+  display: flex;
+  justify-content: flex-start;
+}
